@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3074593511244906772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3074593511244906771}
+  - component: {fileID: 3074593511244906770}
+  - component: {fileID: 3074593511244906773}
+  - component: {fileID: 3074593511244906768}
+  - component: {fileID: 3074593511244906782}
+  - component: {fileID: 3074593511244906769}
+  - component: {fileID: 3074593511244906783}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &3074593511244906771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074593511244906772}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!218 &3074593511244906770
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074593511244906772}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: 423cb291f382fc54a818986d01968077, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 2100000, guid: 5e588dbb73dd29c47bfd21ab36520fa6, type: 2}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
+--- !u!154 &3074593511244906773
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074593511244906772}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 15600000, guid: 423cb291f382fc54a818986d01968077, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!114 &3074593511244906768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074593511244906772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b49b43532e61b4e849a81950ece3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1000
+  regionAmount: 100
+  regionColorAmount: 20
+  cellSize: 20
+  interpolationType: 1
+  material: {fileID: 2100000, guid: 9952da6146db50d4f8f72609e10d293d, type: 2}
+--- !u!114 &3074593511244906782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074593511244906772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d73b7b7141b07314890ff0bcfe51d84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 1.31
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.008266449
+      value: 1.4431496
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1.4578581
+      value: 2.5363193
+      inSlope: -0.11411016
+      outSlope: -0.11411016
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3.1102076
+      value: 0.4033977
+      inSlope: 0.08560172
+      outSlope: 0.08560172
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3.3408623
+      value: 0.31501836
+      inSlope: -0.023402365
+      outSlope: -0.023402365
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3.5028381
+      value: 0.005264282
+      inSlope: -0.93997574
+      outSlope: -0.93997574
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  material: {fileID: 2100000, guid: c6d30cf0d9c818040a028dacdafba253, type: 2}
+  gameObejct: {fileID: 0}
+--- !u!114 &3074593511244906769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074593511244906772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8e37beb56a71b4d9141b068b6c5316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 60f0c77b70964b34fa31b96fe4db233f, type: 2}
+  pentagonalDodecahedronGenerator: {fileID: 0}
+  faces: 20
+  floors: 25
+  cylinderHeight: 0.45
+  thiccness: 2
+  leaveSize: 20.08
+  reductionRate: 0.9793
+  randomness: 1.93
+  randomnessScale: 28.11
+  randomnessX: 1
+  randomnessY: 0.6
+  randomnessZ: 1
+  rootChance: 0
+  rootThiccness: 2
+  angularOffset: 187.01
+  growDir: 1
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.3962264, g: 0.102424376, b: 0, a: 1}
+    key1: {r: 0.21698111, g: 0.055856526, b: 0, a: 1}
+    key2: {r: 0, g: 0.0792079, b: 1, a: 0}
+    key3: {r: 0.6415094, g: 0.16514105, b: 0, a: 0}
+    key4: {r: 0.5254902, g: 0, b: 0.4371228, a: 0}
+    key5: {r: 0.63529414, g: 0.15686275, b: 0.027450982, a: 0}
+    key6: {r: 0.5398177, g: 0.13495013, b: 0.016494669, a: 0}
+    key7: {r: 0.39607847, g: 0.10196079, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 15806
+    ctime2: 15859
+    ctime3: 16122
+    ctime4: 16253
+    ctime5: 16711
+    ctime6: 39128
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+--- !u!114 &3074593511244906783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074593511244906772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40eaf05e543b7cd4ebdb648a5145c4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axiom: K
+  recursion: 7
+  _angle: 7
+  treeAmount: 0
+  useThiccness: 1
+  lIndex: 07000000
+  leaveObject: {fileID: 3159867154824185086, guid: 06df3a48d92ae744f8c7af6335a069c6, type: 3}
+  letter: 410046004b005000
+  rule:
+  - F[++,A.L--][+,AL.-]
+  - F
+  - '[P][P][P]'
+  - +F[A]
